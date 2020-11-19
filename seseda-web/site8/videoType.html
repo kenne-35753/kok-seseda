@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0,user-scalable=no" />
+  <title>色天使</title>
+  <meta name="keywords" content="色天使" />
+  <meta name="description" content="色天使" />
+  <link rel="stylesheet" type="text/css" href="template/JAV/css/common.pro.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/paging.css" />
+  <link rel="stylesheet" type="text/css" href="template/JAV/css/index.min.css" />
+  <link rel="stylesheet" type="text/css" href="template/JAV/css/index.css" />
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="menu flex-column">
+    <div class="top flex-row">
+      <a class="logo" href="index.html"><img class="img" src="template/JAV/IMG/logo.png"></a>
+
+      <form class="search" method="get" action="./videoType.html" id="search_form">
+        <input class="input_text" type="text" name="keyword" placeholder="标题搜索..." autocomplete="off"
+          onsubmit="return InputCheck(this)" />
+          <button style="border: 0;background: transparent;">
+            <i class=" search_submit icon-search"></i>
+          </button>
+      </form>
+    </div>
+    <div class="nav icont" id="nav">
+      <a class="link" href="index.html">首页</a>
+      <div class="qrcode">
+
+      </div>
+      </div>
+  </nav>
+  <main class="main has_filter right_spare left_spare">
+    <div id="propagandaInsert" class="flex-row"></div>
+    <div id="propagandaBottom"></div>
+    <div class="container msry_gg">
+        <ul class="clearfix msry_gg_ul"></ul>
+      </div>
+      <div id="gg_container" class="msry_mgg">
+          <ul class="clearfix msry_mgg_ul">
+          </ul>
+      </div>
+    <h1 class="caster cross_line">关于 【<span  id="titleName"></span>】 的影片</small></h1>
+    <div class="flex-row videos">
+      <div id="propagandaLeft"></div>
+      <section class="flex-row content" id="videoList">
+        
+      </section>
+      <div id="propagandaRight"></div>
+      </div>
+  </main>
+  <center>
+    <div id="pageList"></div>
+  </center>
+  <div class="pagenote flex-row">
+  </div>
+  <div class="footer">
+      <div class="footer-wrap">
+        <div class="copyright">
+        <div class="right-email" style="text-align: center;">
+              广告联系邮箱 :<span id="guangEmail"></span>
+              <p class="right-email_p"></p>
+              客服投诉邮箱 : <span id="tousEmail"></span>
+        </div>
+        <div class="txt">
+          <p style="text-align: center">友情链接</p>
+          <ul id="vLink">
+          </ul>
+        </div>
+      </div>
+  </div></body>
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script src="./js/paging.js"></script>
+<script src="./js/jquery.base64.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/videoType.js"></script>
+
+</html>

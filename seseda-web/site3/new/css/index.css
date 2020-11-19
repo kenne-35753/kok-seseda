@@ -1,0 +1,187 @@
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.msry_gg{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    margin-top: 15px;
+}
+.msry_gg li{
+    float: left;
+    display: inline-block;
+    margin-left: 6px;
+    width:  24.5%;
+}
+
+.msry_gg li img{
+    width: 100%;
+    height: 70px;
+}
+
+#main.container_main{
+    padding: 0em 0 6em 0 !important;
+}
+.index_6u img{
+    width: 403px;
+    height: 227px;
+}
+.meta-data-title{
+    width: 75%;
+}
+#span-case .meta-data-title a{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: right;
+}
+.fp-logo{
+    width: 50px;
+}
+.index_6u{
+    height: 299px;
+}
+.logos{
+    background: url(../images/logo.png) no-repeat;
+    background-size: 100% 100%;
+    width: 40px;
+    height: 70px;
+    display: block;
+}
+.f_left_t{
+    display: flex;
+    align-items: center
+}
+.msry{
+    font-size: 31px;
+    color: rgb(255, 255, 253);
+    margin: 0;
+}
+.dj,.ggyx{
+    margin: 0;
+}
+.dashed-line-padding{
+    padding-top: 32px;
+}
+.ggyx{
+    margin-top: 10px;
+}
+.f_left_t_div{
+    margin-left: 10px;
+}
+#footer{
+    padding: 0px !important;
+}
+.row.\32 00\25 >*{
+    padding: 50px 0px 50px 100px !important;
+}
+.xuxian{
+    width: 2px;
+    height: 100%;
+    border: 2px solid #ccc;
+    padding: 0 !important;
+}
+
+footer {
+    background-color: #2e2e2e;
+    color: #999999;
+    padding-bottom: 20px;
+}
+.footer_box{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 16px;
+}
+footer .footer_box .left {
+    float: left;
+    margin-top: 20px;
+    width: 350px;
+    padding-right: 50px;
+}
+footer .footer_box .left > a {
+    display: block;
+    width: 168px;
+    height: 47px;
+    margin: 0 auto 20px auto;
+}
+footer .footer_box .left > a > img {
+    display: block;
+    width: 168px;
+    height: 47px;
+}
+footer .footer_box .left .right-email {
+    display: inline-block;
+    vertical-align: top;
+    color: #999999;
+}
+footer .footer_box .left .right-email p:last-child {
+    margin-top: 10px;
+}
+footer .footer_box .middle {
+    float: left;
+    width: 2px;
+    height: 80px;
+    background-color: #444444;
+    margin-top: 50px;
+}
+footer .footer_box .right {
+    width: 775px;
+    float: left;
+    margin-left: 70px;
+}
+footer .footer_box .right h3 {
+    color: #666666;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+footer .footer_box .right .url {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+}
+footer .footer_box .right .url li {
+    float: left;
+    margin-right: 30px;
+}
+footer .footer_box .right .url li a {
+    display: block;
+    color: #999999;
+    font-size: 14px;
+}
+footer .footer_box .right .url li a:hover {
+    color: #78bdf2;
+}
+a{
+    text-decoration: none;
+}
+#myVideo{
+    width: 100%;
+    height: 500px;
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    html {
+        width: 1300px;
+    }
+}

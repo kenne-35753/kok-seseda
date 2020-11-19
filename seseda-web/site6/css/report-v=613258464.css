@@ -1,0 +1,80 @@
+.report-modal {
+    position: fixed;
+    z-index: 100;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 5px;
+    left: 50%;
+    overflow: hidden;
+    top: 0;
+    -webkit-transform: translate(-50%, -5%);
+            transform: translate(-50%, -5%);
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    margin-top: 10px;
+}
+
+.report-modal.modal-open {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
+}
+
+.report-modal .feedback__container {
+    margin: auto;
+    padding: 20px 5%;
+}
+
+.report-modal__bg {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: rgba(0,0,0,.8);
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.report-modal .report-close {
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    cursor: pointer;
+}
+
+/* close button styles */
+.close-container:hover::after, .close-container:hover::before {
+    background-color: #eee !important;
+}
+
+.adblock-err {
+    color: red;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* go to top button fix, dunno why it must be here, but i could not find
+   any other place to do that */
+.viewport .go-top-button{
+    bottom: 45px;
+    top: initial;
+	width: 40px;
+	height: 40px;
+}
+
+.viewport .go-top-button:before{
+	left: 13px;
+	top: 15px;
+}
+
+/* some other visual fixes */
+.feedback__container .theme-choose .current-theme {
+    font-weight: normal !important;
+}

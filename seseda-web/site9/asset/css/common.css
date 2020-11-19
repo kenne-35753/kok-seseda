@@ -1,0 +1,157 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.msry_gg{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin:8px 0;
+    padding: 0px;
+}
+.msry_gg li,.msry_mgg_ul li{
+    list-style-type:none;
+}
+.msry_gg_ul,.msry_mgg_ul{
+    padding: 0px;
+}
+.msry_gg li{
+    float: left;
+    margin: 3px 2.9px;
+    display: inline-block;
+    width:  24.5%;
+}
+
+.msry_gg li img{
+    width: 100%;
+    height: 70px;
+}
+.msry_mgg{
+    display: none;
+}
+.v_title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    height: 24px;
+    display: block;
+}
+#hotVideo img{
+    height: 250px;
+}
+#hotVideo b{
+    overflow: hidden; 
+        text-overflow: ellipsis; 
+        -o-text-overflow: ellipsis;
+        white-space:nowrap;
+        width:100%;
+        display:block;
+}
+#videoType img,#top_video img,#bottom_video img{
+    height: 205px;
+}
+.vcontainer{
+    text-align: center;
+}
+.right-email_p{
+    display: inline-block;
+    margin: 0 50px;
+}
+@media screen and (max-width: 1600px){
+    .msry_gg li{
+        width: 24.4%;
+    }
+    .msry_gg li img{
+        height: 65px;
+    }
+    #videoType img{
+        height: 147px;
+    }
+}
+@media screen and (max-width: 1200px){
+    .msry_gg li{
+        width: 24.3%;
+    }
+    .msry_gg li img{
+        height: 60px;
+    }
+    #videoType img{
+        height: 122px;
+    }
+    #video-section .videoWrapper{
+        width: 100%;
+    }
+    #video-section{
+        min-width:0;
+    }
+}
+@media screen and (max-width: 990px){
+    .msry_gg li{
+        width: 24.1%;
+    }
+    .msry_gg li img{
+        height: 50px;
+    }
+    #videoType img{
+        height: 122px;
+    }
+}
+@media screen and (max-width: 768px){
+    .msry_gg li{
+        width: 23.8%;
+    }
+    .msry_gg li img{
+        height: 40px;
+    }
+    #videoType img{
+        height: 88px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .msry_mgg{
+        display: block;
+    }
+    .msry_gg{
+        display: none;
+    }
+    #gg_container{
+        margin: 0 auto;
+        margin-top: 1px;
+    }
+    #gg_container img{
+        width: 100%;
+    }
+    #videoType img{
+        height: 150px;
+    }
+    #top_video img{
+        height: 120px;
+    }
+    #hotVideo img{
+        height: 200px;
+    }
+    .header-container{
+        text-align: center;
+    }
+    .right-email_p{
+        display: block;
+    }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport">
+    <title>蜜桃媚娘AV在線看 - Mt666s.com | 免費高清AV在線看 | J片 AV看到飽</title>
+    <meta name="description"
+    content="蜜桃媚娘成人视频,免费手机看片网站,蜜桃媚娘每日更新偷拍自拍、国产欧美、亚洲日韩,高清无码免费资源,欢迎大家前来观看分享!" />
+    <meta name="keywords" content="蜜桃媚娘_蜜桃媚娘成人视频" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./css/home.css?v=1029" rel="stylesheet" />
+    <link href="./css/layui.css" rel="stylesheet" />
+    <link href="./css/common.css?0.9" rel="stylesheet" />
+    <link href="./css/swiper.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/plyr.min.css">
+    <script src="./js/plyr.min.js"></script>
+    <script src="./js/hls.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <style>
+        .prism-player {
+            position: initial;
+        }
+
+        .prism-player .prism-big-play-btn {
+            z-index: 100;
+        }
+
+        #weixin-tip {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            filter: alpha(opacity=80);
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+        }
+
+        #weixin-tip p {
+            text-align: center;
+            margin-top: 10%;
+            padding: 0 5%;
+            position: relative;
+        }
+
+        #weixin-tip .close {
+            color: #fff;
+            padding: 5px;
+            font: bold 20px/20px simsun;
+            text-shadow: 0 1px 0 #ddd;
+            position: absolute;
+            top: 0;
+            left: 5%;
+        }
+
+        @media (min-width:0) and (max-width:999px) {
+            .prism-player .prism-big-play-btn {
+                display: none;
+            }
+            .bottomBanner{
+                width: 100% !important;
+            }
+        }
+        .flowplayer:not(.is-loaded) {
+        background-color: #324584;
+        height: 80vh
+        }
+        .video_title{
+            width: 100%;
+            font-size: 14px;
+            line-height: 35px;
+            color: #fff;
+        }
+        .bottomBanner{
+            width: 1170px;
+            margin: 0 auto;
+        }
+        .bottomBanner img{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+
+        <div class="header-container">
+            <div class="logo_switch">
+                <a href="./index.html" class="header_link">
+                    <span class="header_logo cn"></span>
+                </a>
+            </div>
+            <div class="website_switch">
+                <a class="menusite_l" id="userLoginIconM" :href="'/login.html'+UserInfo.LinkStr"><span
+                        class="icon hd-login cn"></span></a>
+                <a class="menusite_l" id="userLevelIconM" onclick="location.href='user.aspx'"
+                    style="display:none;"><span class="icon hd-member cn"></span></a>
+            </div>
+            <div class="searchbar_wrapper">
+                <form action="videoType.html" method="get">
+                    <input class="search_bar" type="text" name="keyword" placeholder="搜洞洞" required="">
+                    <button class="search_btn">
+                        <i class="fa fa-search" style="line-height:30px;"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="searchkey_wrapper" id="vTags">
+                <span class="">热门&nbsp;:</span>
+            </div>
+        </div>
+        <nav class="path_bar">
+            <div class="word_wrapper">
+                <ul class="menu_container" id="navUl">
+                        <li class="menu_items"><a href="./index.html"
+                            class="type home status_show">首页</a></li>
+                </ul>
+                <div class="arrow_right_mobile"></div>
+            </div>
+        </nav>
+
+    </header>
+    <div id="container">
+
+        <section style="max-width: 1170px;margin: 0 auto;">
+                <div class="container msry_gg">
+                    <ul class="clearfix msry_gg_ul"></ul>
+                </div>
+                <div id="gg_container" class="msry_mgg">
+                    <ul class="clearfix msry_mgg_ul">
+                    </ul>
+                </div>
+            </section>
+            <div class="con_search">
+                    <form action="videoType.html" method="get" style="width: 100%;">
+                        <div class="btn_search focus">
+                            <span class="tit_search">搜洞洞</span>
+                            <input class="search_bar_m" type="text" name="keyword" placeholder="搜洞洞" required="">
+                                <button class="search_btn_m" style="background: transparent;">
+                                    <i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+        <div id="video-section">
+            <div class="videoWrapper padding_top_10">
+                <div class="videoContent">
+                    <div class="vcontainer">
+                          <!-- <div id="flowplayer"></div> -->
+                          <video id="myVideo" controls crossorigin playsinline poster=""></video>
+                          <div id="video_as" class="video_as"></div>
+                    </div>
+                    <div class="video-action">
+                        <div class="video_title"></div>
+                        <div class="videoviews">
+                            <i class="glyphicon glyphicon-eye-open"></i>
+                            <span>浏览数：</span>
+                            <span id="vWatch_m"></span>
+                        </div>
+
+                        <div class="videoOtherInfo" v-cloak>
+                            <div class="text-view">
+                                <i class="glyphicon glyphicon-eye-open"></i>
+                                <span>浏览数：</span>
+                                <span id="vWatch"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper_ad">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper" id="swiper_as"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <section class="sectionContent below_path_content">
+            <div class="videoInfo" id="videoInfo" v-cloak>
+                <div class="leftBox">
+                    <h1 class="video-title">{{videoinfo.Name}}</h1>
+                    <div class="video-detail">
+                        <p class="list-item">
+                            <span>标签：</span>
+                            <span class="tags">
+                                <a :href="'/tag.aspx?tag='+item" style="margin-right:5px;"
+                                    v-for="item in videoinfo.Tags">{{item}}</a>
+                            </span>
+                        </p>
+                        <p class="list-item">
+                            <span>影片长度：</span><span>{{parseInt(videoinfo.Length/60)>0?parseInt(videoinfo.Length/60)+'分钟':videoinfo.Length%60+'秒'}}</span>
+                        </p>
+                        <p class="list-item"><span>上传时间：</span><span>{{videoinfo.AddTime}}</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部横幅 -->
+			<div id="videoBottom1" class="bottomBanner" style="margin-bottom: 20px;"></div>
+            <div class="videoGroup" id="recommend">
+                <div class="section-title grayBorder">
+                    <h2>猜你会喜欢</h2>
+                </div>
+                <div class="video-wrapper" id="likeVideo">
+                    <div id="comLoader" class="loader" style="display: none;">
+                        <div class="loader-inner ball-beat">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a id="loadMoreActorBtn" class="loadMoreBtn"
+                    :href="'tag.aspx'+UserInfo.LinkStr+'&tag='+recommendTag">看更多</a> -->
+            </div>
+        </section>
+        <div id="weixin-tip">
+            <p><img id="turn_img" src="http://img.imooa.cn/img/wechat-tip.png" style="width:100%" alt="微信打开"></p>
+        </div>
+    </div>
+    <div id="videoBottom3" class="bottomBanner" style="margin-bottom: 20px;"></div>
+     <!-- 左边悬浮 -->
+     <div id="suspensionLeft" class="suspensionLeft"></div>
+     <!-- 右边悬浮 -->
+     <div id="suspensionRight" class="suspensionRight"></div>
+     <!-- 底部悬浮 -->
+     <div id="bottom_as" class="bottom_as"></div>
+    <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-declaration" id="vLink">
+                    <span>友情链接</span>:
+                </div>
+                <div class="footer-declaration">
+                    <p>
+                        广告联系邮箱 :<span id="guangEmail"></span>
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        客服投诉邮箱 : <span id="tousEmail"></span>
+                    </p>
+                </div>
+                <div class="footer-declaration">
+                        <a :href="javascript:;" style="color: #f6a623">我要加盟</a>
+                        <a href="javascript:;">常见问题</a>
+                        <span>Copyright © 2017 蜜桃媚娘 All Rights Reserved.</span>
+                        <span style="color: red;"> &nbsp;&nbsp;&nbsp;未满18岁禁止观看</span>
+                </div>
+            </div>
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.base64.js"></script>
+    <script src="./js/common.js?0.12"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/video_player.js?0.2"></script>
+</body>
+
+</html>

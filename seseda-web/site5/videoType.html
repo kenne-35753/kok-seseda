@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport">
+    <title>蜜桃媚娘AV在線看 - Mt666s.com | 免費高清AV在線看 | J片 AV看到飽</title>
+    <meta name="description"
+    content="蜜桃媚娘成人视频,免费手机看片网站,蜜桃媚娘每日更新偷拍自拍、国产欧美、亚洲日韩,高清无码免费资源,欢迎大家前来观看分享!" />
+    <meta name="keywords" content="蜜桃媚娘_蜜桃媚娘成人视频" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./css/home.css?v=1029" rel="stylesheet" />
+    <link href="./css/layui.css" rel="stylesheet" />
+    <link href="./css/common.css?0.7" rel="stylesheet" />
+    <style>
+        .bottomBanner img{
+          width: 100%;
+      }
+      </style>
+</head>
+
+<body>
+    <header id="header">
+
+        <div class="header-container">
+            <div class="logo_switch">
+                <a href="./index.html" class="header_link">
+                    <span class="header_logo cn"></span>
+                </a>
+            </div>
+            <div class="website_switch">
+                <a class="menusite_l" id="userLoginIconM" :href="'/login.html'+UserInfo.LinkStr"><span
+                        class="icon hd-login cn"></span></a>
+                <a class="menusite_l" id="userLevelIconM" onclick="location.href='user.aspx'"
+                    style="display:none;"><span class="icon hd-member cn"></span></a>
+            </div>
+            <div class="searchbar_wrapper">
+                <form action="videoType.html" method="get">
+                        <input class="search_bar" type="text" name="keyword" placeholder="搜洞洞" required="">
+                        <button class="search_btn">
+                            <i class="fa fa-search" style="line-height:30px;"></i>
+                        </button>
+                </form>
+            </div>
+            <div class="searchkey_wrapper" id="vTags">
+                <span class="">热门&nbsp;:</span>
+            </div>
+        </div>
+        <nav class="path_bar">
+            <div class="word_wrapper">
+                <ul class="menu_container" id="navUl">
+                    <li class="menu_items"><a href="./index.html"
+                            class="type home status_show">首页</a></li>
+                </ul>
+                <div class="arrow_right_mobile"></div>
+            </div>
+        </nav>
+
+    </header>
+    <div id="container">
+
+            <section style="max-width: 1170px;margin: 0 auto;">
+                    <div class="container msry_gg">
+                        <ul class="clearfix msry_gg_ul"></ul>
+                    </div>
+                    <div id="gg_container" class="msry_mgg">
+                        <ul class="clearfix msry_mgg_ul">
+                        </ul>
+                    </div>
+                </section>
+        <div class="con_search">
+            <form action="videoType.html" method="get" style="width: 100%;">
+                <div class="btn_search focus">
+                    <span class="tit_search">搜洞洞</span>
+                    <input class="search_bar_m" type="text" name="keyword" placeholder="搜洞洞" required="">
+                        <button class="search_btn_m" style="background: transparent;">
+                            <i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <section class="sectionContent below_path_content">
+            <div class="videoGroup">
+
+                <div class="section-title grayBorder">
+                    <div>
+                        <h1> <span id="titleName"></span></h1>
+                    </div>
+                    <!-- 右上排序列 -->
+                    <div class="cat_select_wrap">
+                        <span class="cat_title">排序：</span>
+                        <a href="javascript:void(0)" @click="orderby('AddTime')" id="AddTime"
+                            class="cat_option clicked">
+                            <span class="selectbox"></span>
+                            <span class="selecttext">最新上架</span>
+                        </a>
+                        <a href="javascript:void(0)" @click="orderby('SeeCount')" id="SeeCount" class="cat_option ">
+                            <span class="selectbox"></span>
+                            <span class="selecttext">人气最高</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="app" class="video-wrapper videoList">
+                        <div id="comLoader" class="loader" style="display: none;">
+                            <div class="loader-inner ball-beat">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                <span id="loadMoreActorBtn" class="loadMoreBtn">看更多</span>
+            </div>
+        </section>
+    </div>
+     <!-- 左边悬浮 -->
+     <div id="suspensionLeft" class="suspensionLeft"></div>
+     <!-- 右边悬浮 -->
+     <div id="suspensionRight" class="suspensionRight"></div>
+     <!-- 底部悬浮 -->
+     <div id="bottom_as" class="bottom_as"></div>
+    <footer id="footer">
+
+            <div class="footer-container">
+                <div class="footer-declaration" id="vLink">
+                    <span>友情链接</span>:
+                </div>
+                <div class="footer-declaration">
+                    <p>
+                        广告联系邮箱 :<span id="guangEmail"></span>
+                        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        客服投诉邮箱 : <span id="tousEmail"></span>
+                    </p>
+                </div>
+                <div class="footer-declaration">
+                        <a :href="javascript:;" style="color: #f6a623">我要加盟</a>
+                        <a href="javascript:;">常见问题</a>
+                        <span>Copyright © 2017 蜜桃媚娘 All Rights Reserved.</span>
+                        <span style="color: red;"> &nbsp;&nbsp;&nbsp;未满18岁禁止观看</span>
+                </div>
+            </div>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.base64.js"></script>
+    <script src="./js/common.js?0.12"></script>
+    <script src="./js/videoType.js?0.2"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.main .h1 {
+    font-weight: normal;
+    margin-bottom: 16px;
+    font-family: "Microsoft YaHei Light", "pingfang SC", helvetica, arial, verdana, tahoma, sans-serif
+}
+
+@media screen and (max-width: 420px) {
+    .main .h1 {
+        margin-bottom: 8px
+    }
+}
+
+.main .broadcast {
+    font-size: 0;
+    margin-bottom: 16px
+}
+
+.main .broadcast .h1 {
+    color: #7f5fb9;
+    font-weight: bolder
+}
+
+.main .broadcast .content {
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px
+}
+
+.main .broadcast .content .scroll {
+    display: inline-block
+}
+
+.main .broadcast .content .img_post {
+    width: 280px;
+    margin-right: 8px;
+    overflow: hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px
+}
+
+.main .broadcast .content .img_post:after {
+    padding-top: 66.6667%
+}
+
+.main .broadroll {
+    background: #ffbfb6;
+    color: #ee3b20;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #ffbfb6;
+    border-left: 4px solid #ffbfb6
+}
+
+.main .broadroll .scroll {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2;
+    padding-right: 18px
+}
+.owl-nav{
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.owl-prev,.owl-next{
+    margin: 0 10px;
+}
+.owl-carousel .owl-nav.disabled{
+    display: block !important;
+}

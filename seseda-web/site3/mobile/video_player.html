@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <title>美色人鱼</title>
+    <meta name="description"
+        content="美色人鱼" />
+    <meta name="keywords"
+        content="美色人鱼" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link href="css/framework.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="../new/css/font-awesome.min.css">
+    <link href="../new/css/plyr.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="../new/js/plyr.min.js"></script>
+	<script src="../new/js/hls.min.js"></script>
+    <script type="text/javascript" src="../new/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../new/js/jquery.base64.js"></script>
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 0px;
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        i {
+            margin-right: 6px;
+            margin-top: 6px;
+        }
+
+        .meta_data {
+            margin-right: 12px;
+            margin-top: 6px;
+        }
+
+        .fol {
+            padding: 6px 12px;
+            background: #333;
+            margin: 6px 6px 0 0;
+            float: left;
+        }
+
+        .pornstars {
+            padding: 24px 0 0 0;
+        }
+
+        .pornstars a {
+            color: #666 !important;
+            border-bottom: 1px dotted #666;
+            text-decoration: none !important;
+        }
+
+        .pornstars a:hover {
+            border-bottom: 0px dotted #666;
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: .2;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: .2;
+            }
+        }
+
+        .loading_dots span {
+            animation-name: blink;
+            animation-duration: 1.4s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        .loading_dots span:nth-child(2) {
+            animation-delay: .2s;
+        }
+
+        .loading_dots span:nth-child(3) {
+            animation-delay: .4s;
+        }
+
+        .loading_dots {
+            padding: 15px 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .altPlayerButton {
+            padding: 6px 12px;
+            background: #333;
+            display: inline-block;
+        }
+        .myVideo-dimensions{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px){
+            #videoImg{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="websiteWrapper">
+
+        <ul class="mainMenuWrapper" id="navUl">
+            <li><a href="./index.html" class="click-trigger">首页</a></li>
+			<li><a href="videoList.html?hotVideo=热门" class="click-trigger">热门视频</a></li>
+			<li><a href="videoList.html?newVideo=更新" class="click-trigger">最近更新</a></li>
+			<li><a href="videoList.html?recommendVideo=推荐" class="click-trigger">推荐视频</a></li>
+        </ul>
+        <div class="homeSearchWrapper" style="margin-bottom:0;margin-top: 24px;">
+            <div style="height:48px;width:48px;background-color:#fff;float:left;">
+                <a href="javascript:;" class="mainMenuButton click-trigger" style="width: 48px;"><img
+                        src="./images/common/mainMenuButtonBg.png"></a>
+            </div>
+            <form action="videoList.html" method="get" class="homeSearchForm">
+                    <fieldset>
+                        <input type="text" name="keyword" value="" placeholder="搜索..."
+                            class="homeSearchFormField goodPlaceholder" id="homeSearchFormField" />
+                        <input type="submit" value="" class="buttonWrapper homeSearchFormSubmitButton"
+                            id="homeSearchFormSubmitButton" />
+                    </fieldset>
+            </form>
+        </div>
+
+        <div style="padding: 24px;padding-bottom: 0px;">
+            <video id="myVideo" controls crossorigin playsinline poster=""></video>
+            <div style="padding: 24px 0 0 0;">
+                <h1 class="video_title" style="margin-bottom: 0px;font-size:18px;"></h1>
+            </div>
+        </div>
+
+        <div style="padding: 0 24px;padding-bottom: 12px;">
+            <div style="padding: 0px 0 2px 0;font-size:14px;">
+                <div style="display: inline-block;float: left;"><i class="fa fa-eye fa-lg"
+                        style="line-height: 1em;" aria-hidden="true"></i><span class="meta_data" id="watchNum"></span>
+                </div>
+                <div style="display: inline-block;float: left;"><i class="fa fa-clock-o fa-lg" style="line-height: 1em;"
+                        aria-hidden="true"></i><span class="meta_data" id="videoTime"></span></div>
+            </div>
+
+
+            <div class="video_Tags"></div>
+
+        </div>
+        <div id="likeVideo"></div>
+
+    </div>
+    <footer style="margin-top: 20px;">
+            <div class="footer-div">
+                <p>广告邮箱 : <span id="guangEmail"></span></p>
+                <p> | </p>
+                <p>投诉邮箱 : <span id="tousEmail"></span></p>
+            </div>
+            <p style="width: 92%;margin: 10px auto;">友情链接</p>
+            <div>
+            <ul class="links-text" id="vLink">
+            </ul>
+            </div>
+        </footer>
+    <script type="text/javascript" src="../new/js/common.js"></script>
+    <script type="text/javascript" src="../new/js/video_player.js"></script>
+</body>
+
+</html>
